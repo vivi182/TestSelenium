@@ -31,7 +31,7 @@ public class Locators {
 
         //getting back to the login page
        // driver.findElement();
-        //
+        // //
 
         // login correct
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
