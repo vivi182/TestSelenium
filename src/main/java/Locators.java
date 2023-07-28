@@ -30,15 +30,16 @@ public class Locators {
      //   driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("something@something.com"); //nedoporucuje se
 
         //getting back to the login page
-       // driver.findElement();
-        // //
+        driver.findElement(By.xpath("//button[normalize-space()='Go to Login']")).click();
+        Thread.sleep(1000); // cekani vterinu
+
 
         // login correct
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
 
         //select checkbox
-        driver.findElement(By.id("checkboxOne")).click();
+        driver.findElement(By.id("chkboxOne")).click();
         driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
 
     }
